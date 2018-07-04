@@ -5,7 +5,6 @@
 //  Created by Ajith Kumar on 15/06/18.
 //  Copyright © 2018 Ajith Kumar. All rights reserved.
 //
-//
 import UIKit
 
 enum modes {
