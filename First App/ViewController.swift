@@ -19,6 +19,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var labelOutput: UILabel!
     
+    @IBOutlet weak var labelCommand: UILabel!
+    
     var labelString:String = "0"
     var currentMode:modes = .not_set
     var savedNum:Double = 0
@@ -82,6 +84,7 @@ class ViewController: UIViewController {
         savedNum = 0
         lastButtonWasMode = false
         labelOutput?.text = "0"
+        labelCommand?.text = ""
     }
     
    
@@ -114,6 +117,7 @@ class ViewController: UIViewController {
         
         labelOutput?.text = numberFormatter.string(from: num)
         labelOutput.sizeToFit()
+        labelCommand?.text = String(savedNum)
     }
     
     func changeMode(newMode:modes){
